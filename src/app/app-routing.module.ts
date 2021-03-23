@@ -9,20 +9,19 @@ import { TechComponent } from './tech/tech.component';
 import { TopnewsComponent } from './topnews/topnews.component';
 import { WeatherComponent } from './weather/weather.component';
 
-
 const routes: Routes = [
-  {path:"",component:TopnewsComponent},
-  {path:"tech",component:TechComponent},
-  {path:"sport",component:SportComponent},
-  {path:"business",component:BusinessComponent},
-  {path:"science",component:ScienceComponent},
-  {path:"health",component:HealthComponent},
-  {path:"Entertainment",component:EntertainmentComponent},
-  {path:"weather",component:WeatherComponent},
+  { path: '', component: TopnewsComponent },
+  { path: 'tech', component: TechComponent },
+  { path: 'sport', component: SportComponent },
+  { path: 'business', component: BusinessComponent },
+  { path: 'science', component: ScienceComponent },
+  { path: 'health', component: HealthComponent },
+  { path: 'Entertainment', component: EntertainmentComponent },
+  { path: 'weather', component: WeatherComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

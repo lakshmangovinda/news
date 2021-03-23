@@ -1,17 +1,18 @@
 <ngx-loading-bar color="blue" height="3px"></ngx-loading-bar>
 
-<div class="container-fluid    ">
-     <h3><u>Science Headlines</u>:</h3>
-<div class="row">
-     <div *ngFor="let data of sciencenews" class="col-lg-3" >
-<div class="box">
-<img src="{{data.urlToImage}}" class="img-fluid">
-<h5>{{data.title}}</h5>
-<button class="btn btn-dark btn-sm" ><a style="color: white;" href="{{data.url}}" target="_Blank">readmore</a></button>
-
-</div>
-     
-     </div>
-</div>
-
+<div class="container-fluid">
+  <h3><u>Science Headlines</u>:</h3>
+  <div class="row">
+    <div *ngFor="let data of sciencenews" class="col-lg-3">
+      <div class="box">
+        <img src="{{ data.urlToImage }}" class="img-fluid" />
+        <h5>{{ data.title }}</h5>
+        <button class="btn btn-dark btn-sm">
+          <a style="color: white" href="{{ data.url }}" target="_Blank"
+            >readmore</a
+          >
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

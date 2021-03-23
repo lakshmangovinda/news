@@ -1,40 +1,74 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand a " [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="">Home</a>
-    <button class="navbar-toggler" type="button" (click)="navtoggle()" data-bs-toggle="collapse"   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a
+      class="navbar-brand a"
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="active"
+      routerLink=""
+      >Home</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="navtoggle()"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show':istoggel}">
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      [ngClass]="{ show: istoggel }"
+    >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link a"   routerLinkActive="active" routerLink="tech" >Technology</a>
+          <a class="nav-link a" routerLinkActive="active" routerLink="tech"
+            >Technology</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link a"  routerLinkActive="active" routerLink="sport">Sports</a>
+          <a class="nav-link a" routerLinkActive="active" routerLink="sport"
+            >Sports</a
+          >
         </li>
-        
+
         <li class="nav-item">
-          <a class="nav-link a"  routerLinkActive="active" routerLink="business">Business</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link a"  routerLinkActive="active" routerLink="science">Science</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link a"  routerLinkActive="active" routerLink="health">Health</a>
+          <a class="nav-link a" routerLinkActive="active" routerLink="business"
+            >Business</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link a"  routerLinkActive="active" routerLink="Entertainment">Entertainment</a>
+          <a class="nav-link a" routerLinkActive="active" routerLink="science"
+            >Science</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link a"  routerLinkActive="active" routerLink="weather">Weather</a>
+          <a class="nav-link a" routerLinkActive="active" routerLink="health"
+            >Health</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link a"
+            routerLinkActive="active"
+            routerLink="Entertainment"
+            >Entertainment</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" routerLinkActive="active" routerLink="weather"
+            >Weather</a
+          >
         </li>
       </ul>
-
-   
     </div>
   </div>
 </nav>
 <router-outlet></router-outlet>
 <footer class="mt-3">
-  <p class="text">&copy;2021 CopyRights </p>
+  <p class="text">&copy;2021 CopyRights</p>
 </footer>

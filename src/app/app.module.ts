@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { TopnewsComponent } from './topnews/topnews.component';
 import { TechComponent } from './tech/tech.component';
 import { SportComponent } from './sport/sport.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { BusinessComponent } from './business/business.component';
 import { ScienceComponent } from './science/science.component';
 import { HealthComponent } from './health/health.component';
@@ -16,9 +16,7 @@ import { EntertainmentComponent } from './entertainment/entertainment.component'
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatCardModule} from '@angular/material/card';
-
-
+import { MatCardModule } from '@angular/material/card';
 
 // for Core import:
 import { LoadingBarModule } from '@ngx-loading-bar/core';
@@ -34,7 +32,7 @@ import { WeatherComponent } from './weather/weather.component';
     ScienceComponent,
     HealthComponent,
     EntertainmentComponent,
-    WeatherComponent
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,10 +41,9 @@ import { WeatherComponent } from './weather/weather.component';
     LoadingBarModule,
     LoadingBarHttpClientModule,
     ReactiveFormsModule,
-    MatCardModule
-    
+    MatCardModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
